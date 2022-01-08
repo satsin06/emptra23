@@ -1,0 +1,60 @@
+@media print {
+	
+	.pd-left{padding-left:0}.pd-right{padding-right:0}.pdfprint p{font-size:12px}.pdfprint .col-sm-5,.col-md-5{width:41.66666667%}.pdfprint .col-sm-7,.col-md-7{width:58.33333333%}.pdfprint .col-sm-6,.col-md-6{width:50%}.httext{font-weight:bold;font-size:16px;line-height:28px}.htsubtext{font-weight:bold;font-size:14px;line-height:24px}p.tablepara{font-size:12px}p.description{font-size:10px}p.marginleft{margin-left:60px}.paddingleft{padding-left:60px}.minheight{min-height:250px}
+	.pdfprint p span{display: inline-block; flot: left;}
+	.size-18{
+		font-size: 18px;
+	}
+	.online-application-sec .pdlefteight {width:65%;}
+	.online-application-sec .col-md-3.pd-left.datahead{width:25%;}
+}
+
+/*#watermark{background:url(../images/vahan_logo-tri-color.png) no-repeat!important;background-position:50% 50%}*/.pdfprint{background:url(../images/vahan_logo-tri-color.png) no-repeat!important}.pd-left{padding-left:0}.pd-right{padding-right:0}.pdfprint p{font-size:12px}.pdfprint .col-sm-5,.col-md-5{width:41.66666667%}.pdfprint .col-sm-7,.col-md-7{width:58.33333333%}.pdfprint .col-sm-6,.col-md-6{width:50%}.httext{font-weight:bold;font-size:16px;line-height:28px}.htsubtext{font-weight:bold;font-size:14px;line-height:24px}p.tablepara{font-size:12px}p.description{font-size:12px}.marginleft{margin-left:60px}.paddingleft{padding-left:60px}.minheight{min-height:250px}
+
+.whitetext {
+    position: fixed;
+    top: calc(+50%);
+	font-weight:bold;
+	color:rgb(221,221,221);
+	opacity: 0.1;
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+}
+
+.logotext{
+	top: calc(+5)%) !important;
+}
+	
+.whitetext.rotate{
+	top: calc(+25%);
+} 
+
+
+.whitetext img{
+	margin: 0 auto;
+	width: 75%;
+}
+
+.whitetext img{
+	width: 95%;
+}
+
+.whitetext.rotate img{
+	width: 75%;
+}
+
+.text-underline{text-decoration:underline}.datarow{line-height:30px;font-size:14px;}.datahead{font-weight:normal}.valuebold{font-weight:bold}
+@media print{
+	* {-webkit-print-color-adjust:exact;}
+	.pdfprint{}.whitetext{font-size:20px;color:rgb(222,222,222)!important}
+	.datarow{font-size:10px;}
+	.mediaprintforuserheader .textareacontainer.rc-parti{
+		top: 0px !important;
+		position: relative !important;
+		line-height: normal;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+}

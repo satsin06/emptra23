@@ -1,0 +1,15 @@
+{
+	"auth": {
+		"aws1011caff": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	},
+	"storage": {
+		"s3d70eda7d": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
