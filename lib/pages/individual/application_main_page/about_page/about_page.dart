@@ -25,6 +25,7 @@ import 'package:flutter_emptra/pages/individual/application_main_page/about_page
 import 'package:flutter_emptra/pages/individual/application_main_page/about_page/experience_aboutd.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/about_page/intrest_about.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/about_page/photos_about.dart';
+import 'package:flutter_emptra/pages/individual/application_main_page/about_page/shimmer_about.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/about_page/skills_about.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/about_page/videos_about.dart';
 import 'package:flutter_emptra/pages/individual/clickable_card/education_card.dart';
@@ -608,9 +609,11 @@ class _AboutPageState extends State<AboutPage> {
     return SafeArea(
       child: Material(
         color: Color(0xffF8F7F3),
-        child: _isLoading == true
-            ? Center(child: CircularProgressIndicator())
-            : Scaffold(
+        child: 
+        _isLoading == true
+            ? Center(child: ShimmerAbout())
+            : 
+            Scaffold(
                 drawer: MyDrawer(),
                 body: SingleChildScrollView(
                   child: Column(
@@ -1931,7 +1934,7 @@ class _AboutPageState extends State<AboutPage> {
                       ),
 
                       /// Videos About
-                      VideosAbout()
+                      VideosAbout(),
                     ],
                   ),
                 ),

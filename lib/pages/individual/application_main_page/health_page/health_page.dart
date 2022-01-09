@@ -17,6 +17,7 @@ import 'package:flutter_emptra/pages/individual/add/health/physicalBody.dart';
 import 'package:flutter_emptra/pages/individual/add/health/rtpcr.dart';
 import 'package:flutter_emptra/pages/individual/add/health/vaccine1add.dart';
 import 'package:flutter_emptra/pages/individual/add/health/vaccine2add.dart';
+import 'package:flutter_emptra/pages/individual/application_main_page/about_page/shimmer_about.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/health_page/bmi_health.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/health_page/covid_vaccination_health.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/health_page/physical_details_health.dart';
@@ -442,7 +443,7 @@ class _HealthPageState extends State<HealthPage> {
         child: Material(
             color: Color(0xffF8F7F3),
             child: _isLoading == true
-                ? Center(child: CircularProgressIndicator())
+                ? Center(child: ShimmerAbout())
                 : Scaffold(
                     drawer: MyDrawer(),
                     body: SingleChildScrollView(

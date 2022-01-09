@@ -9,6 +9,7 @@ import 'package:flutter_emptra/models/getListModel/getCourseModel.dart';
 import 'package:flutter_emptra/models/getListModel/getLearningScore.dart';
 import 'package:flutter_emptra/models/getListModel/getProfileinfoModel.dart';
 import 'package:flutter_emptra/pages/individual/add/learning/certificate_add.dart';
+import 'package:flutter_emptra/pages/individual/application_main_page/about_page/shimmer_about.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/learning_page/courses_learning.dart';
 import 'package:flutter_emptra/pages/individual/clickable_card/certificate_card.dart';
 import 'package:flutter_emptra/pages/individual/clickable_card/courses_card.dart';
@@ -239,7 +240,7 @@ class _LearningPageState extends State<LearningPage> {
       child: Material(
         color: Color(0xffF8F7F3),
         child: _isLoading == true
-            ? Center(child: CircularProgressIndicator())
+            ? Center(child: ShimmerAbout())
             : Scaffold(
           drawer: MyDrawer(),
                 body: SingleChildScrollView(

@@ -14,6 +14,7 @@ import 'package:flutter_emptra/models/getListModel/getEtScore.dart';
 import 'package:flutter_emptra/models/getListModel/getPenDetail.dart';
 import 'package:flutter_emptra/models/getListModel/getProfileinfoModel.dart';
 import 'package:flutter_emptra/pages/individual/add/account/country_add.dart';
+import 'package:flutter_emptra/pages/individual/application_main_page/about_page/shimmer_about.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/account_page/review_account.dart';
 import 'package:flutter_emptra/pages/individual/application_main_page/account_page/self_assessment_account.dart';
 import 'package:flutter_emptra/pages/individual/clickable_card/address_card.dart';
@@ -449,7 +450,7 @@ class _AccountPageState extends State<AccountPage> {
       child: Material(
         color: Color(0xffF8F7F3),
         child: _isLoading == true
-            ? Center(child: CircularProgressIndicator())
+            ? Center(child: ShimmerAbout())
             : Scaffold(
                 drawer: MyDrawer(),
                 body: SingleChildScrollView(
